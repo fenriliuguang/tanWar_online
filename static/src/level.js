@@ -30,6 +30,24 @@
             this.asset = asset;
             console.log(game)
             this.AIPlayer = new game.AIPlayer();
+
+
+
+            for (let v of document.getElementsByClassName("done")) {
+                v.onclick = () => {
+                    document.getElementById("alert-victory").style.display = "none";
+                    this.gate++;
+                    this.start();
+                };
+            }
+            for (let v of document.getElementsByClassName("retry")) {
+                v.onclick = () => {
+                    document.getElementById("alert-life-depleted").style.display = "none";
+                    document.getElementById("alert-base-down").style.display = "none";
+                    this.reset();
+                };
+            }
+            console.log(document.getElementsByClassName("done"))
         };
 
         reset() {
@@ -109,9 +127,14 @@
             this.AIPlayer.stop();
 
             if (this.enemyNumber === 0) {
-                alert("通关");
-                this.gate++;
-                this.start();
+                //alert("通关");
+                document.getElementById("alert-victory").style.display = "inline";
+                // document.getElementsByClassName("done").onclick = function() {
+                //     document.getElementById("alert-victory").style.display = "none";
+                //     this.gate++;
+                //     this.start();
+                // };
+
             } else {
                 this.initEnemy();
             }
@@ -122,10 +145,14 @@
         onMeDead() {
             this.myTankNum--;
             if (this.myTankNum === 0) {
-                alert("失败");
-                alert("重新开始游戏");
+                /*alert("失败");
+                alert("重新开始游戏");*/
+                document.getElementById("alert-life-depleted").style.display = "inline";
+                // document.getElementsByClassName("retry").onclick = function() {
+                //     document.getElementById("alert-life-depleted").style.display = "none";
+                //     this.reset();
+                // };
 
-                this.reset();
             } else {
                 this.initMe();
             }
@@ -134,18 +161,21 @@
         };
 
         onBaseDead() {
-            alert("失败");
-            alert("重新开始游戏");
-
-            this.reset();
+            /*alert("失败");
+            alert("重新开始游戏");*/
+            document.getElementById("alert-base-down").style.display = "inline";
+            // document.getElementsByClassName("retry").onclick = function() {
+            //     document.getElementById("alert-base-down").style.display = "none";
+            //     this.reset();
+            // };
         };
 
         upData() {
-            document.getElementById("user").innerHTML = this.username;
-            document.getElementById("level").innerHTML = this.gate + 1;
-            document.getElementById("score").innerHTML = this.score;
-            document.getElementById("enemy").innerHTML = this.enemyNumber;
-            document.getElementById("myTank").innerHTML = this.myTankNum;
+            document.getElementById("user").innerHTML = this.username + "<br/>";
+            document.getElementById("level").innerHTML = this.gate + 1 + "<br/>";
+            document.getElementById("score").innerHTML = this.score + "<br/>";
+            document.getElementById("enemy").innerHTML = this.enemyNumber + "<br/>";
+            document.getElementById("myTank").innerHTML = this.myTankNum + "<br/>";
         };
 
         initMe() {

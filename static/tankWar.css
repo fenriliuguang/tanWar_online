@@ -1,3 +1,253 @@
 #conf {
     float: left;
 }
+
+
+/*�ⲿ����ʧ�ܴ�����ʽ*/
+
+#alert-base-down {
+    position: fixed;
+    bottom: 50%;
+    right: 32%;
+    width: 480px;
+    height: 180px;
+    border-radius: 8px;
+    background-color: aliceblue;
+}
+
+#alert-base-down {
+    display: none;
+}
+
+#alert-life-depleted {
+    position: fixed;
+    bottom: 50%;
+    right: 32%;
+    width: 480px;
+    height: 180px;
+    border-radius: 8px;
+    background-color: aliceblue;
+}
+
+#alert-life-depleted {
+    display: none;
+}
+
+div.lost-title {
+    position: absolute;
+    top: 0;
+    width: 475px;
+    height: 18%;
+    background-color: #8DCAFF;
+    border-left-style: solid;
+    border-width: 5px;
+    border-color: aqua;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+div.lost-content {
+    position: absolute;
+    top: 20%;
+    width: 100%;
+}
+
+p.lost-content-text {
+    position: absolute;
+    top: 5%;
+    left: 2%;
+    width: 100%;
+    font-family: 'Microsoft JhengHei';
+    font-size: 1.1em;
+    text-align: left;
+    line-height: 0;
+    letter-spacing: 0em;
+    font-weight: 600;
+    font-style: normal;
+    color: dimgray;
+}
+
+div.button-area {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    width: 100%;
+    height: 30%;
+}
+
+p.lost-title-text {
+    position: absolute;
+    bottom: 0%;
+    left: 2%;
+    width: 100px;
+    font-family: 'Microsoft JhengHei';
+    font-weight: bold;
+    font-size: 1.1em;
+    text-align: left;
+    line-height: 0;
+    letter-spacing: 0em;
+    font-weight: 900;
+    font-style: normal;
+    color: dimgray;
+}
+
+button.retry {
+    width: 108px;
+    height: 36px;
+    position: absolute;
+    top: 20%;
+    right: 10%;
+}
+
+
+/*ʧ�ܴ�����ʽ�������*/
+
+
+/*�ⲿ����ʤ��������ʽ*/
+
+#alert-victory {
+    position: fixed;
+    bottom: 50%;
+    right: 32%;
+    width: 480px;
+    height: 180px;
+    border-radius: 8px;
+    background-color: #fdcfc1;
+}
+
+#alert-victory {
+    display: none;
+}
+
+div.victory-title {
+    position: absolute;
+    top: 0;
+    width: 475px;
+    height: 18%;
+    background-color: #ff7f50;
+    border-left-style: solid;
+    border-width: 5px;
+    border-color: red;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+div.victory-content {
+    position: absolute;
+    top: 20%;
+    width: 100%;
+}
+
+p.victory-content-text {
+    position: absolute;
+    top: 5%;
+    left: 2%;
+    width: 100%;
+    font-family: 'Microsoft JhengHei';
+    font-size: 1.1em;
+    text-align: left;
+    line-height: 0;
+    letter-spacing: 0em;
+    font-weight: 600;
+    font-style: normal;
+    color: dimgray;
+}
+
+div.button-area {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    width: 100%;
+    height: 30%;
+}
+
+p.victory-title-text {
+    position: absolute;
+    bottom: 0%;
+    left: 2%;
+    width: 100px;
+    font-family: 'Microsoft JhengHei';
+    font-weight: bold;
+    font-size: 1.1em;
+    text-align: left;
+    line-height: 0;
+    letter-spacing: 0em;
+    font-weight: 900;
+    font-style: normal;
+    color: dimgray;
+}
+
+button.done {
+    width: 108px;
+    height: 36px;
+    position: absolute;
+    top: 20%;
+    right: 10%;
+}
+
+
+/*ʤ��������ʽ�������*/
+
+
+/*��Щ�ǲ��������ʽ*/
+
+.topTap {
+    z-index: 100;
+}
+
+p {
+    display: inline;
+    font-family: "Times New Roman";
+    font-size: 16px;
+    color: orange;
+}
+
+p1 {
+    display: inline;
+    line-height: 4px;
+    font-family: "Times New Roman";
+    font-size: 16px;
+    color: black;
+}
+
+p2 {
+    font-family: "Times New Roman";
+    font-size: 16px;
+    color: orange;
+}
+
+p.padding {
+    padding-top: 4px;
+    padding-bottom: 1px;
+    padding-right: 0px;
+    padding-left: 4px;
+}
+
+p.padding1 {
+    padding-top: 4px;
+    padding-bottom: px;
+    padding-right: 0px;
+    padding-left: 0px;
+}
+
+p.outset {
+    outline-style: outset
+}
+
+.button {
+    background-color: #4CAF50;
+    /* Green */
+    border: none;
+    color: white;
+    padding: 2px 32px;
+    text-align: center;
+    margin: 10px 0px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+
+/*���������ʽ�������*/
